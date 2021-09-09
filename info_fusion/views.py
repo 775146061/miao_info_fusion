@@ -7,6 +7,8 @@ from info_fusion.constants import provinceMap
 import requests
 import logging
 import json
+import random
+import time
 
 log = logging.getLogger('log')
 
@@ -38,3 +40,4 @@ def info_fusion_job():
         log.info(f'状态码: {res.status_code}')
         log.info(f'proxyUseCount: {proxyUseCount}')
         proxyUseCount = proxyUseCount + 1
+        time.sleep(random.randrange(0, 60))
