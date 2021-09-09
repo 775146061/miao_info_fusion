@@ -1,0 +1,246 @@
+[2021-06-14 15:07:22,450] [handle_exception_middleware.py:17] [handle_exception_middleware:process_exception] [ERROR]- 
+Traceback (most recent call last):
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 250, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/views/decorators/common.py", line 12, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 431, in catch_all_view
+    raise Http404
+django.http.response.Http404
+Stack (most recent call last):
+  File "/opt/miniconda3/lib/python3.9/threading.py", line 912, in _bootstrap
+    self._bootstrap_inner()
+  File "/opt/miniconda3/lib/python3.9/threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "/opt/miniconda3/lib/python3.9/threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/miniconda3/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/opt/miniconda3/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/opt/miniconda3/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/servers/basehttp.py", line 178, in handle
+    self.handle_one_request()
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/servers/basehttp.py", line 201, in handle_one_request
+    handler.run(self.server.get_app())
+  File "/opt/miniconda3/lib/python3.9/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/contrib/staticfiles/handlers.py", line 76, in __call__
+    return self.application(environ, start_response)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/wsgi.py", line 133, in __call__
+    response = self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/base.py", line 130, in get_response
+    response = self._middleware_chain(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/wanxiaotian/Desktop/学习一些技术/spider/yuemiao/miao_info_ fusion/miao_info_fusion/miao_info_fusion/middleware/handle_exception_middleware.py", line 12, in __call__
+    response = self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/utils/deprecation.py", line 117, in __call__
+    response = response or self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/utils/deprecation.py", line 117, in __call__
+    response = response or self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/utils/deprecation.py", line 117, in __call__
+    response = response or self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/utils/deprecation.py", line 117, in __call__
+    response = response or self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/utils/deprecation.py", line 117, in __call__
+    response = response or self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/utils/deprecation.py", line 117, in __call__
+    response = response or self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/utils/deprecation.py", line 117, in __call__
+    response = response or self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/base.py", line 183, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/base.py", line 339, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "/Users/wanxiaotian/Desktop/学习一些技术/spider/yuemiao/miao_info_ fusion/miao_info_fusion/miao_info_fusion/middleware/handle_exception_middleware.py", line 17, in process_exception
+    log.error(exception, exc_info=True, stack_info=True)
+[2021-06-14 15:07:27,657] [handle_exception_middleware.py:17] [handle_exception_middleware:process_exception] [ERROR]- 
+Traceback (most recent call last):
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 250, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/views/decorators/common.py", line 12, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 431, in catch_all_view
+    raise Http404
+django.http.response.Http404
+Stack (most recent call last):
+  File "/opt/miniconda3/lib/python3.9/threading.py", line 912, in _bootstrap
+    self._bootstrap_inner()
+  File "/opt/miniconda3/lib/python3.9/threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "/opt/miniconda3/lib/python3.9/threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/miniconda3/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/opt/miniconda3/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/opt/miniconda3/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/servers/basehttp.py", line 178, in handle
+    self.handle_one_request()
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/servers/basehttp.py", line 201, in handle_one_request
+    handler.run(self.server.get_app())
+  File "/opt/miniconda3/lib/python3.9/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/contrib/staticfiles/handlers.py", line 76, in __call__
+    return self.application(environ, start_response)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/wsgi.py", line 133, in __call__
+    response = self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/base.py", line 130, in get_response
+    response = self._middleware_chain(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/wanxiaotian/Desktop/学习一些技术/spider/yuemiao/miao_info_ fusion/miao_info_fusion/miao_info_fusion/middleware/handle_exception_middleware.py", line 12, in __call__
+    response = self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/utils/deprecation.py", line 117, in __call__
+    response = response or self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/utils/deprecation.py", line 117, in __call__
+    response = response or self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/utils/deprecation.py", line 117, in __call__
+    response = response or self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/utils/deprecation.py", line 117, in __call__
+    response = response or self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/utils/deprecation.py", line 117, in __call__
+    response = response or self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/utils/deprecation.py", line 117, in __call__
+    response = response or self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/utils/deprecation.py", line 117, in __call__
+    response = response or self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/base.py", line 183, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/base.py", line 339, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "/Users/wanxiaotian/Desktop/学习一些技术/spider/yuemiao/miao_info_ fusion/miao_info_fusion/miao_info_fusion/middleware/handle_exception_middleware.py", line 17, in process_exception
+    log.error(exception, exc_info=True, stack_info=True)
+[2021-06-14 15:07:28,055] [handle_exception_middleware.py:17] [handle_exception_middleware:process_exception] [ERROR]- 
+Traceback (most recent call last):
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 250, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/views/decorators/common.py", line 12, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 431, in catch_all_view
+    raise Http404
+django.http.response.Http404
+Stack (most recent call last):
+  File "/opt/miniconda3/lib/python3.9/threading.py", line 912, in _bootstrap
+    self._bootstrap_inner()
+  File "/opt/miniconda3/lib/python3.9/threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "/opt/miniconda3/lib/python3.9/threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/miniconda3/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/opt/miniconda3/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/opt/miniconda3/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/servers/basehttp.py", line 178, in handle
+    self.handle_one_request()
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/servers/basehttp.py", line 201, in handle_one_request
+    handler.run(self.server.get_app())
+  File "/opt/miniconda3/lib/python3.9/wsgiref/handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/contrib/staticfiles/handlers.py", line 76, in __call__
+    return self.application(environ, start_response)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/wsgi.py", line 133, in __call__
+    response = self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/base.py", line 130, in get_response
+    response = self._middleware_chain(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/wanxiaotian/Desktop/学习一些技术/spider/yuemiao/miao_info_ fusion/miao_info_fusion/miao_info_fusion/middleware/handle_exception_middleware.py", line 12, in __call__
+    response = self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/utils/deprecation.py", line 117, in __call__
+    response = response or self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/utils/deprecation.py", line 117, in __call__
+    response = response or self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/utils/deprecation.py", line 117, in __call__
+    response = response or self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/utils/deprecation.py", line 117, in __call__
+    response = response or self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/utils/deprecation.py", line 117, in __call__
+    response = response or self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/utils/deprecation.py", line 117, in __call__
+    response = response or self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/utils/deprecation.py", line 117, in __call__
+    response = response or self.get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/base.py", line 183, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/miniconda3/lib/python3.9/site-packages/django/core/handlers/base.py", line 339, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "/Users/wanxiaotian/Desktop/学习一些技术/spider/yuemiao/miao_info_ fusion/miao_info_fusion/miao_info_fusion/middleware/handle_exception_middleware.py", line 17, in process_exception
+    log.error(exception, exc_info=True, stack_info=True)
