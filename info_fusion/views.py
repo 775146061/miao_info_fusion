@@ -29,6 +29,7 @@ def info_fusion_job():
         proxy = json.loads(resOfProxy.content)
         proxies = {'https': proxy['proxy']}
     get_proxy()
+    # 1 九价 2 四价
     for key in provinceMap:
         url = f'https://cloud.cn2030.com/sc/wx/HandlerSubscribe.ashx?act=CustomerList&city=["{key}","",""]&id=0&cityCode={provinceMap[key]}&product=0'
         log.info(f'url: {url}')
