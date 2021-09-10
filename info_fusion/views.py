@@ -3,7 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 
 from info_fusion.scheduler import scheduler
-from info_fusion.constants import provinceMap
+from info_fusion.constants import provinceMap, userAgents
 import requests
 import logging
 import json
@@ -36,8 +36,9 @@ def info_fusion_job():
             get_proxy()
             proxyUseCount = 1
 
+        headers['User-Agent'] = userAgents[random.randrange(0, 336)]
         res = requests.get(url, headers=headers, proxies=proxies)
         log.info(f'状态码: {res.status_code}')
         log.info(f'proxyUseCount: {proxyUseCount}')
         proxyUseCount = proxyUseCount + 1
-        time.sleep(random.randrange(0, 60))
+        time.sleep(random.randrange(0, 5))
